@@ -47,18 +47,36 @@ table {
 	border-spacing: 0;
 }
 
-.site-header {
+.site-title {
+    color: azure;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* NAVIGATION */
+
 .navbar {
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    padding: 20px;
 }
 
 .nav-list {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding: 0px 20px;
+    gap: 10px;
 }
 
 .nav-link {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    font-weight: 500;
 }
+
 
 /* HERO */
 .hero {
