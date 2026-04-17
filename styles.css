@@ -182,7 +182,68 @@ button:hover {
 
 /* WHY THIS MATTERS */
 .importance-section {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
 }
+
+.importance-box {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.7;    
+}
+
+.diagram-box {
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.diagram-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 18px;
+}
+
+.diagram-item {
+    font-weight: 700;
+    padding: 18px 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.diagram-symbol {
+    display: none;
+}
+
+.diagram-arrow {
+    grid-column: 1/4;
+    font-size: 2.3rem;
+    margin: 0;
+    color: #a52a2a;
+}
+
+.diagram-result {
+    grid-column: 2/3;
+    font-weight: 700;
+    padding: 36px 56px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: #a52a2a;
+}
+
+
+
 
 /* FOOTER */
 .site-footer {
