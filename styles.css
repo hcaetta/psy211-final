@@ -242,6 +242,136 @@ button:hover {
     color: #a52a2a;
 }
 
+.importance-section {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.importance-box {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.diagram-box {
+    max-width: 1200px;
+    margin: 0 auto 35px auto;
+}
+
+.diagram-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.diagram-item {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.biological-card {
+    width: 340px;
+    padding: 30px 24px;
+}
+
+.biological-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.biological-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.diagram-symbol {
+    font-size: 2.5rem;
+    color: #a52a2a;
+    margin-bottom: 16px;
+}
+
+.quote-box {
+    max-width: 1050px;
+}
+
+.quote-item {
+    padding: 35px 30px;
+}
+
+.quote-title {
+    color: #a52a2a;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.quote-text {
+    font-size: 1.45rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.quote-credit {
+    font-size: 1rem;
+    color: #555;
+}
+
+.bottom-info-list {
+    gap: 24px;
+}
+
+.info-card {
+    width: 500px;
+    padding: 28px 24px;
+    text-align: left;
+}
+
+.info-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .biological-card,
+    .info-card {
+        width: 100%;
+    }
+
+    .quote-text {
+        font-size: 1.15rem;
+    }
+}
 
 
 
