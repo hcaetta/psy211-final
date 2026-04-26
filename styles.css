@@ -60,7 +60,7 @@ table {
     display: flex;
     align-items: center;
     background-color: white;
-    border-top: solid 10px brown;
+    border-top: solid 10px #a52a2a;
     padding: 20px 20px 20px 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
@@ -127,6 +127,7 @@ table {
     gap: 40px;
     padding: 0 40px;
     flex-wrap: wrap;
+    margin-bottom: 200px;
 }
 
 .factor-card {
@@ -181,11 +182,6 @@ button:hover {
 }
 
 /* WHY THIS MATTERS */
-.importance-section {
-    padding: 80px 20px;
-    background-color: white;
-    text-align: center;
-}
 
 .importance-box {
     max-width: 800px;
@@ -215,48 +211,36 @@ button:hover {
 }
 
 .diagram-item {
-    font-weight: 700;
     padding: 18px 28px;
     border-radius: 14px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     text-align: center;
+    background: white;
+
 }
 
-.diagram-symbol {
-    display: none;
+.diagram-item h3 {
+    font-weight: bold;
 }
 
-.diagram-arrow {
-    grid-column: 1/4;
-    font-size: 2.3rem;
-    margin: 0;
-    color: #a52a2a;
-}
-
-.diagram-result {
-    grid-column: 2/3;
-    font-weight: 700;
-    padding: 36px 56px;
-    border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    color: #a52a2a;
-}
-
-.importance-section {
-    padding: 80px 20px;
-    background-color: white;
-    text-align: center;
-}
-
-.importance-box {
-    max-width: 900px;
-    margin: 0 auto 50px auto;
+.factors-background {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1645%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1646%26quot%3b)'%3e%3c/rect%3e%3cpath d='M 0%2c255 C 41.2%2c224 123.6%2c121.8 206%2c100 C 288.4%2c78.2 329.6%2c151 412%2c146 C 494.4%2c141 535.6%2c68.8 618%2c75 C 700.4%2c81.2 741.6%2c188.4 824%2c177 C 906.4%2c165.6 947.6%2c0 1030%2c18 C 1112.4%2c36 1154%2c257.2 1236%2c267 C 1318%2c276.8 1399.2%2c107 1440%2c67L1440 560L0 560z' fill='rgba(101%2c 25%2c 25%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c495 C 41.2%2c479.4 123.6%2c430 206%2c417 C 288.4%2c404 329.6%2c440.8 412%2c430 C 494.4%2c419.2 535.6%2c354 618%2c363 C 700.4%2c372 741.6%2c470 824%2c475 C 906.4%2c480 947.6%2c393.2 1030%2c388 C 1112.4%2c382.8 1154%2c453.6 1236%2c449 C 1318%2c444.4 1399.2%2c381.8 1440%2c365L1440 560L0 560z' fill='rgba(165%2c 42%2c 42%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1645'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1646'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(131%2c 34%2c 34%2c 1)' offset='1'%3e%3c/stop%3e%3cstop stop-color='rgba(165%2c 42%2c 42%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: solid 8px brown;
+    padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
+    color: white;
+    text-align: center;
+    padding: 20px 80px;
+    margin-top: 80px;
 }
 
 .section-text {
@@ -264,11 +248,17 @@ button:hover {
     line-height: 1.7;
     max-width: 850px;
     margin: 0 auto;
+    text-align: center;
+    color: white;
 }
+
+
 
 .diagram-box {
     max-width: 1200px;
     margin: 0 auto 35px auto;
+    position: relative;
+    
 }
 
 .diagram-list {
@@ -279,15 +269,8 @@ button:hover {
     gap: 24px;
 }
 
-.diagram-item {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    text-align: center;
-}
-
 .biological-card {
-    width: 340px;
+    width: 285px;
     padding: 30px 24px;
 }
 
@@ -296,13 +279,9 @@ button:hover {
     margin-bottom: 12px;
 }
 
-.biological-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
 
 .diagram-symbol {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #a52a2a;
     margin-bottom: 16px;
 }
@@ -313,19 +292,26 @@ button:hover {
 
 .quote-item {
     padding: 35px 30px;
+    background: linear-gradient(90deg, rgba(131, 34, 34, 1) 15%, rgba(247, 240, 227, 1) 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote-title {
     color: #a52a2a;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     margin-bottom: 14px;
+    text-transform: uppercase;
 }
 
 .quote-text {
+    display: flex;
     font-size: 1.45rem;
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 14px;
+    max-width: 400px;
 }
 
 .quote-credit {
@@ -333,8 +319,14 @@ button:hover {
     color: #555;
 }
 
-.bottom-info-list {
-    gap: 24px;
+.quotes {
+    font-family: "Space Grotesk", sans-serif;
+    position: absolute;
+    left: 5%;
+    transform: translateY(75%);
+    font-size: 6rem;
+    color: white;
+    text-align: left;
 }
 
 .info-card {
@@ -354,29 +346,29 @@ button:hover {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 1.8rem;
-    }
+svg {
+    margin-bottom: 15px;
+    background-color: #ffe7e7;
+    border-radius: 50%;
+    padding: 15px;
+}
 
-    .section-text {
-        font-size: 1rem;
-    }
-
-    .biological-card,
-    .info-card {
-        width: 100%;
-    }
-
-    .quote-text {
-        font-size: 1.15rem;
-    }
+strong {
+    font-weight: bolder;
 }
 
 
 
 /* FOOTER */
 .site-footer {
+    background-color: black;
+    padding: 20px 60px;
+    border-top: solid 8px white;
+    color: white;
+}
+
+.footer-list {
+    text-align: center;
 }
 
 
